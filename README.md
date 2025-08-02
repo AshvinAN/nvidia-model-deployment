@@ -1,86 +1,34 @@
-\# NVIDIA Model Deployment Project
+# NVIDIA Model Deployment – TensorFlow Example
 
+This project demonstrates deploying a simple TensorFlow model using the NVIDIA Deep Learning Institute (DLI) lab environment.
 
+## 🚀 Project Highlights
 
-🚀 \*\*Project Overview\*\*  
+- Built and trained a basic TensorFlow model using Keras `Sequential` API.
+- Saved the trained model in **SavedModel format** under `models/simple-tensorflow-model/1`.
+- Ran inference using dummy input data and verified model predictions.
+- Organized and uploaded the model files to GitHub for showcasing.
 
-This project showcases the deployment of a PyTorch NLP model using TorchScript and Triton Inference Server, as part of NVIDIA DLI training.
-
-
-
-⚙️ \*\*Tech Stack\*\*
-
-\- PyTorch, TorchScript
-
-\- HuggingFace Transformers (XLM-Roberta)
-
-\- Triton Inference Server
-
-\- Docker, Linux CLI
-
-
-
-📦 \*\*Features\*\*
-
-\- Exported HuggingFace model using TorchScript
-
-\- Created model repository with `config.pbtxt`
-
-\- Deployed model on Triton Inference Server
-
-\- Sent inference requests and received predictions
-
-
-
-📁 \*\*Folder Structure\*\*
-
+## 🗂️ Folder Structure
 models/
+└── simple-tensorflow-model/
+└── 1/
+├── assets/
+├── variables/
+│ ├── variables.data-00000-of-00001
+│ └── variables.index
+└── saved_model.pb
 
-└── huggingface-model/
+## 📸 Screenshots
 
-├── 1/
+- ✅ Model training & saving
+- ✅ Folder structure
+- ✅ Inference output
+- ✅ GitHub hosted model repo
 
-│ └── model.pt
+## 🧠 Skills Practiced
 
-└── config.pbtxt
-
-
-
-🧪 \*\*How to Run\*\*
-
-```bash
-
-\# Export the model
-
-python export\_model.py
-
-
-
-\# Start Triton server
-
-tritonserver --model-repository=models/
-
-
-
-\# Send inference request
-
-python client\_infer.py
-
-
-
-
-
-📝 What I Learned
-
-
-
-How to trace PyTorch models using TorchScript
-
-
-
-How to configure and run Triton Server
-
-
-
-Hands-on practice with model deployment and inference APIs
-
+- Model creation with TensorFlow/Keras
+- SavedModel format deployment
+- Git/GitHub project management
+- Hands-on with model inference
