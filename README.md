@@ -13,7 +13,7 @@ This project demonstrates deploying a simple TensorFlow model using the NVIDIA D
 models/
 └── simple-tensorflow-model/
 └── 1/
-├── assets/
+├── Screenshots/
 ├── variables/
 │ ├── variables.data-00000-of-00001
 │ └── variables.index
